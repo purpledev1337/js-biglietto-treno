@@ -1,15 +1,15 @@
 // Chiedere all’utente il numero di chilometri da percorrere
 const tripKms = parseInt(prompt("How many kilometres do you have to travel?"));
-console.log("Kms: ", tripKms);
+console.log("Distance: ", tripKms, "Km");
 
 // Chiedere all’utente l’età del passeggero
 const userAge = parseInt(prompt("What's your age?"));
-console.log("Age: ", userAge);
+console.log("Age: ", userAge, "years old");
 
 
 // Il prezzo del biglietto è 0.21 € al km
-let basicPrice = tripKms * 0.20;
-console.log("Basic Price: " , basicPrice);
+let basicPrice = tripKms * 0.21;
+console.log("Basic Price: €" , basicPrice);
 
 // va applicato uno sconto del 20% per gli under 18
 // va applicato uno sconto del 40% per gli over 65
@@ -29,7 +29,9 @@ if (discount > 0) {
     finalPrice = basicPrice
 }
 
-console.log("Discount%: " , discount)
-console.log("Final Price: " , finalPrice)
+console.log("Discount: €" , discount)
+console.log("Final Price: €" , finalPrice)
 
 // Output del prezzo finale in forma umana (massimo due decimali)
+let humanPrice = Math.round((finalPrice + Number.EPSILON) * 100) / 100
+console.log("Human Comprehensible Price: €" , humanPrice)
