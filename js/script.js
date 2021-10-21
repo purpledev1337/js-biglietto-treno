@@ -1,17 +1,23 @@
 // Chiedere all’utente il numero di chilometri da percorrere
 const tripKms = parseInt(prompt("How many kilometres do you have to travel?"));
-console.log("Distance: ", tripKms, "Km");
 document.getElementById('tripKms').innerHTML = tripKms;
+
+// Se l'utente non inserisce dei numeri la pagina si ricarica
+if (Number.isNaN(tripKms)) {
+    alert("Please, insert a valid distance!"), location.reload(); 
+}
 
 // Chiedere all’utente l’età del passeggero
 const userAge = parseInt(prompt("What's your age?"));
-console.log("Age: ", userAge, "years old");
 document.getElementById('userAge').innerHTML = userAge;
 
+// Se l'utente non inserisce dei numeri la pagina si ricarica
+if (Number.isNaN(userAge)) {
+    alert("Please, insert a valid age!"), location.reload(); 
+}
 
 // Il prezzo del biglietto è 0.21 € al km
 let basicPrice = tripKms * 0.21;
-console.log("Basic Price: €" , basicPrice);
 document.getElementById('basicPrice').innerHTML = basicPrice;
 
 

@@ -12,10 +12,11 @@
 </head>
 <body>
 
-    <main class="container_center">
+    
+    <div id="fakemachine">
 
         <div id="fakescreen">
-            
+
             <h1>Boolean Old Style Train Station</h1>
             
             <h2>Check your details</h2>
@@ -30,10 +31,10 @@
             <h2>Ticket info</h2>
             <ul>
                 <li>
-                    Basic Price - € <span id="basicPrice"></span>
+                    Normal Price - € <span id="basicPrice"></span>
                 </li>
                 <li>
-                    Discount Value based on age - € <span id="humanDiscount"></span>
+                    Discount - € <span id="humanDiscount"></span>
                 </li>
                 <li id="price">
                     Your Price - € <span id="humanPrice"></span>
@@ -41,16 +42,18 @@
                 <script src="js/script.js"></script>
             </ul>
             
-            <div class="container_center">
-                <div class="btn confirm">Buy Ticket</div>
-                <div class="btn">GO Back</div>
-            </div>
-            
-        
         </div>
+
+        <div id="fakebuttons">
+            <div class="btn confirm">Buy Ticket</div>
+            <a href="?">
+                <div class="btn">GO Back</div>
+            </a>
+        </div>
+
+    </div>
+    <!-- <div class="container_center"> -->
+    <!-- </div> -->
         
-    </main>
-        
-        
-    </body>
+</body>
 </html>
