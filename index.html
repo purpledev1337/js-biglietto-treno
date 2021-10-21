@@ -4,33 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Prezzo biglietto treno</title>
 </head>
 <body>
 
-    <h1>Boolean Train Station</h1>
-    
-    <h4>Passenger data recap:</h4>
-    <ul>
-        <li>
-            Distance: <span id="tripKms"></span> Km
-        </li>
-        <li>
-            Age: <span id="userAge"></span> years old
-        </li>
-        <li>
-            Basic Price: €<span id="basicPrice"></span>
-        </li>
-        <li>
-            Discount Value based on age: €<span id="humanDiscount"></span>
-        </li>
-        <li>
-            Your Price: €<span id="humanPrice"></span>
-        </li>
-        <script src="js/script.js"></script>
-    </ul>
+    <main class="container_center">
 
-
-</body>
+        <div id="fakescreen">
+            
+            <h1>Boolean Old Style Train Station</h1>
+            
+            <h2>Check your details</h2>
+            <ul>
+                <li>
+                    Distance - <span id="tripKms"></span> Km
+                </li>
+                <li>
+                    Age - <span id="userAge"></span> years old
+                </li>
+            </ul>
+            <h2>Ticket info</h2>
+            <ul>
+                <li>
+                    Basic Price - € <span id="basicPrice"></span>
+                </li>
+                <li>
+                    Discount Value based on age - € <span id="humanDiscount"></span>
+                </li>
+                <li id="price">
+                    Your Price - € <span id="humanPrice"></span>
+                </li>
+                <script src="js/script.js"></script>
+            </ul>
+            
+            <div class="container_center">
+                <div class="btn confirm">Buy Ticket</div>
+                <div class="btn">GO Back</div>
+            </div>
+            
+        
+        </div>
+        
+    </main>
+        
+        
+    </body>
 </html>

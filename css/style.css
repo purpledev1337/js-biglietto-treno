@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: center / cover no-repeat url("https://st3.depositphotos.com/4676639/35286/i/950/depositphotos_352864954-stock-photo-polish-people-waiting-for-a.jpg");
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.container_center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fakescreen {
+    width: 50%;
+    background-color: rgb(1, 150, 100);
+    border: 10px solid rgb(39, 39, 39);
+    padding: 2%;
+}
+
+#fakescreen h1 {
+    text-align: center;
+    margin-bottom: 30px;
+	text-transform: uppercase;
+
+}
+
+#fakescreen ul {
+    list-style: none;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#fakescreen span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#price {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+	text-transform: uppercase;
+
+}
+
+.btn {
+	background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	color: white;
+	cursor: grabbing;
+	display: inline-block;
+	font-size: 3.5rem;
+	margin: 2rem;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+    text-align: center;
+}
+
+.confirm {
+    background: #005800
+}
